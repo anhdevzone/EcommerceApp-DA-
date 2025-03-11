@@ -1,8 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 export const connectDB = async () => {
   await mongoose
     .connect(
-      'mongodb+srv://workdev:0102030@cluster0.zadun.mongodb.net/ecommerce-app'
+      "mongodb+srv://anhdevzone:0000@cluster0.8lw7x.mongodb.net/ecommerce-app"
     )
-    .then(() => console.log('DB Connected'));
+    .then(() => console.log("DB Connected"));
 };
