@@ -46,3 +46,17 @@ export const deleteData = async (url) => {
   const { data } = await apiClient.delete(url);
   return data;
 };
+
+export const demoPromise = (a, b) => {
+  return new Promise((resolve, reject) => {
+    // if(a + b === 2) {
+    //   resolve(true)
+    // }else {
+    //   reject(false)
+    // }
+    // (a + b ===2) ? resolve(true): reject(false)
+    (a + b ===2) && resolve(true);
+    (a + b !== 2) && reject(false)
+  })
+}
+
